@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project Specific - Personal Data
+1 Download_from_Reftown/*.xlsx
+!1 Download_from_Reftown/Example/*.xlsx
+3 Upload_to_Refsix/*.xlsx
+!3 Upload_to_Refsix/Example/*.xlsx
+
+# Keep example data
+!Example/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
