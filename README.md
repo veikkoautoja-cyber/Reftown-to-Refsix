@@ -6,9 +6,9 @@ A Python utility to convert soccer officiating assignments from Reftown platform
 
 This tool automates the conversion of officiating assignment data between two soccer officiating management platforms:
 - **Source**: Reftown (download format)
-- **Target**: Refsix (upload format)
+- **Target**: Refsix (upload format, uploading requires the paid Refsix subscription)
 
-Perfect for soccer officials and assignors who need to transfer data between these systems.
+Perfect for soccer referees who need to transfer data between these systems to be used on the Refsix match management app.
 
 ## Features
 
@@ -141,17 +141,12 @@ Standard Refsix import format with all required columns for match and official d
 
 ## Troubleshooting
 
-**No Excel files found in download folder**
-- Ensure your Reftown downloads are in `1 Download_from_Reftown/`
-- Check that files have `.xlsx` extension
-- Avoid temporary Excel files starting with `~$`
-
 **Age group not found**
 - Edit the lookup table in `REFSIXUploadMatchesTemplate.xlsx`
-- Add missing age groups to the "Tables_for_vlookups" sheet
+- Add missing age groups (formats may differ by organization e.g. U18, B12) to the "Tables_for_vlookups" sheet
 
 **Incorrect team colors**
-- Update color mappings in `New_colors.xlsx` or the template
+- Update color mappings in `New_colors.xlsx` or the template, otherwise assigns default colors
 
 ## Contributing
 
