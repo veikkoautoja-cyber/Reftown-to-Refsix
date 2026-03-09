@@ -259,7 +259,10 @@ def convert_reftown_to_refsix(reftown_df: pd.DataFrame,
 
         output_rows.append(output_row)
 
-    return pd.DataFrame(output_rows)
+    # Create DataFrame and replace NaN with empty strings to avoid Excel issues
+    df = pd.DataFrame(output_rows)
+    df = df.fillna("")
+    return df
 
 
 def main():
